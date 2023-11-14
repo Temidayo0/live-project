@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <style>
     body {
       /* background-color: lightsteelblue; */
@@ -20,7 +24,8 @@
       border: 1px groove;
       background-color: white;
       position: fixed;
-      padding-left: 19px;
+      padding-left: 75px;
+      margin: opx auto;
     }
 
     .all {
@@ -28,6 +33,7 @@
       width: fit-content;
       margin-left: 60px;
       margin-right: 50px;
+      /* margin: 0px auto; */
 
     }
 
@@ -62,7 +68,7 @@
 
     ul li {
       list-style: none;
-      margin-left: 62px;
+      margin-left: 60px;
       margin-top: 27px;
       font-size: 14px;
     }
@@ -73,7 +79,7 @@
     }
 
     .nu {
-      margin-left: 90px;
+      margin-left: 50px;
       margin-top: 10px;
       background-color: rgb(241, 93, 93);
       color: white;
@@ -122,7 +128,6 @@
     }
 
     #cv {
-      margin-top: 150px;
       font-family: Arial;
       font-weight: bold;
     }
@@ -139,9 +144,6 @@
       color: tomato;
     }
 
-    #vf {
-      margin-top: 190px;
-    }
 
     .bvc {
       text-align: center;
@@ -184,15 +186,16 @@
     }
 
     .ct {
-      background-color:azure;
-      padding-top: 100px;
+      background-color: azure;
+      padding-top: 20%;
       padding-bottom: 50px;
     }
 
-    .ccx{
+    .ccx {
       border: 2px groove;
       background-color: white;
     }
+
     .iop {
       background-color: white;
       padding: 20px;
@@ -205,11 +208,106 @@
       border: 1px groove;
     }
 
-    .mnb {
-      /* background-color: darkgrey; */
+
+
+    #zx {
+      padding-top: 150px;
     }
-    .mnx{
+
+    .mnx {
       color: black;
+    }
+
+    th {
+      border-collapse: collapse;
+      border: 2px groove;
+      /* border-top:none; */
+      padding: 20px;
+    }
+
+    .aq {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    .bg {
+      margin-left: 70px;
+    }
+
+    #e {
+      background-color: rgb(177, 226, 191);
+      width: fit-content;
+    }
+
+    #tr {
+      background: rgb(180, 194, 233);
+      margin-left: 40px;
+      width: fit-content;
+    }
+    #tab{
+      background: #FAFBFF;
+    }
+
+
+    @media screen and (max-width:768px) {
+
+      body{
+        overflow-x: hidden;
+      }
+      .ct {
+        padding-top: 50%;
+      }
+
+      #vf{
+        margin-top:10%;
+        width: 70%;
+        margin-left: 14%;
+      }
+      #cv{
+        text-align: center;
+      }
+
+      #ccx{
+        margin-left: 15%;
+      }
+      
+    
+
+    #ok {
+      
+      
+      width: 70%;
+      margin-top: 50px;
+     
+    }
+
+    #po {
+      
+      margin-top: 10%;
+      width: 70%;
+    }
+
+    #oi{
+      width: 70%;
+    }
+
+    #immg{
+      width: 100%;    
+    }
+    table{
+      width: 90%;
+      margin-left: -12%;
+    }
+
+    #zx{
+      text-align: start;
+      margin-left: -10%;
+    }
+    #tab{
+      margin-top: -35%;
+    }
+
     }
   </style>
 </head>
@@ -236,7 +334,8 @@
     <div class="drop">
       <div class="drp1">
         <uli class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="se.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="se.html"" role=" button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Product Engineering
           </a>
           <ul class="dropdown-menu">
@@ -299,13 +398,13 @@
   <div class="ct">
     <div class="container">
       <div class="row">
-        <div class="col-6" id="cv">
+        <div class="col-md-6" id="cv">
           <h1>Enginering the next <br>best thing for <br> the
             digital world</h1>
           <p>Agile in mind, spirit and Speed</p>
           <button class="bh">Scale your dream team</button>
         </div>
-        <div class="col-6" id="vf">
+        <div class="col-md-6" id="vf">
           <img src="img/home-hero-banner@2x.webp" alt="" width="110%">
         </div>
       </div>
@@ -364,32 +463,48 @@
 
 
     </div><br></br>
-    <div class="mnb">
-      <div class="container-fluid" id="mnb">
+
+    <div id="tab">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 container" id="zx">
             <h1>Trusted by the <br>world’s leading <br>brands</h1>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 container">
             <div class="row">
-              <div class="col">
-                <table border="">
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <th></th>
+              <div class="col-md-12" >
+                <table>
+                  <tr >
+                    <th><img src="img/rebbullg-5081cbdda382d840d9eecc872ce5c9b8.svg" alt="" id="immg"></th>
+                    <th><img src="img/pespsico.svg" alt="" id="immg"></t>
+                    <th> <img src="img/hm-sonyg-logo-1eb5cd62ee302f4c4f564eb3123c3c90.svg" alt="" id="immg"></th>
+                    <th> <img src="img/hilton.svg" alt="" id="immg"></th>
+                  </tr>
+                  <tr >
+                    <th><img src="img/boyscoutg-6d6684f00b0930da48a8610a4fef4bed.svg" alt="" id="immg"></th>
+                    <th> <img src="img/georgia-pacific.svg" alt="" id="immg"></th>
+                    <th><img src="img/bitmapg-7b4446d4c6a027ec21b922e79e444e95.svg" alt="" id="immg"></t>
+                    <th> <img src="img/zepinc.svg" alt="" id="immg"></th>
                   </tr>
                   <tr>
-                    <th></th>
+                    <th><img src="img/try.svg" alt="" id="immg"></th>
+                    <th><img src="img/fih.svg" alt="" id="immg"></th>
+                    <th><img src="img/cameo.svg" alt="" id="immg"></th>
+                    <th><img src="img/renesas-logo-1d290e00ae3d5ca1ac5c40ae799d9dcb.svg" alt="" id="immg"></th>
+                  </tr>
+                  <tr>
+                    <th><img src="img/margaritaville-logo-b1552c2b32b377f7029f10a800ed6bee.svg" alt="" id="immg"></th>
+                    <th><img src="img/bank of america.svg" alt="" id="immg"></th>
+                    <th><img src="img/mistubishi electric.svg" alt="" id="immg"></th>
+                    <th><img src="img/fujifilm.svg" alt="" id="immg"></th>
                   </tr>
                 </table>
               </div>
             </div>
           </div>
-        </div>
+        </div><br><br><br></br>
       </div>
-    </div><br><br></br>
+    </div>
     <div class="yt">
       <h1>Your Full-Stack IT Outsourcing Partner</h1>
       <h4 class="mnx">Our culture aligns well with yours – agile in mind, spirit, and speed.</h4>
@@ -460,9 +575,70 @@
         </div>
       </div>
     </div><br> </br>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6" id="e">
+        <img src="img/visibly-case-logo@2x.png" alt="" width="80px">
+        <h5>Software that digitize the eye test <br>within five minutes</h5>
+        <p>.....a digital platform which could be an alternate to <br>the traditional lab coat and lens approach for
+          .... </p>
+        <h5>Read More</h5><br><br><br>
+        <h6>Results</h6><br>
+        _____________________________________________________________
+        <div class="aq">
+          <div class="qw">
+            <h5>Reduced eye test</h5>
+            <p>cost by75%</p>
+          </div>
+          <div class="bg">
+            <h5>Compelte eye test </h5>
+            <p>using smartphone within <br>10-15 minutes</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-6" id="tr">
+        <img src="img/freewire-case-logo@2x.png" alt="" width="90px">
+        <h5>EV charging platform to revolutionize <br>the we power everything</h5>
+        <p>FreeWire's Mobi Gen product line offer clean and <br>quiet on-site power to substitue... </p>
+        <h5>Read More</h5><br><br><br>
+        <h6>Results</h6><br>
+        _____________________________________________________________
+        <div class="aq">
+          <div class="qw">
+            <h5>$125 Million</h5>
+            <p>Funding for Next Gen <br>development</p>
+          </div>
+          <div class="bg">
+            <h5>Used by big companies</h5>
+            <P>Walmart, Uber, Volvo, <br>Linkedin, BellEnergy</P>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
