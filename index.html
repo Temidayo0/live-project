@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!--fontawesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,6 +22,13 @@
 
     a {
       text-decoration: none;
+    }
+
+    .pop {
+      background-image: url(img/ggggggg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
     }
 
     .alll {
@@ -318,88 +329,94 @@
 </head>
 
 <body>
-  <div class="alll">
-    <div class="all">
-      <div class="nav">
-        <div class="img">
-          <img src="img/simform logo.webp" alt="" width="30px">
-          <h4><a href="se.html">SIMFORM</a></h4>
+  <div style="background-color: white; border: 1px solid whitesmoke; position: fixed; z-index: 100%;">
+    <nav class="navbar navbar-expand-lg ">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/simform logo.webp" width="30px" alt="">SIMFORM</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-weight: bold;">About
+                us</a>
+            </li>
+
+            <li class="nav-item" style="margin-left: 40px;">
+              <a class="nav-link" href="#" style="font-weight: bold;">Our Work</a>
+            </li>
+            <li class="nav-item" style="margin-left: 40px;">
+              <a class="nav-link" href="#" style="font-weight: bold;">Blog</a>
+            </li>
+            <li class="nav-item" style="margin-left: 40px;">
+              <a class="nav-link" href="#" style="font-weight: bold;">Ebook</a>
+            </li>
+            <li class="nav-item" style="margin-left: 40px;">
+              <a class="nav-link" href="#" style="font-weight: bold;">Technology Comparisons</a>
+            </li>
+            <li class="nav-item" style="margin-left: 40px;">
+              <a class="nav-link" href="#" style="font-weight: bold;">How it work</a>
+            </li>
+            <li class="nav-item" style="margin-left: 90px;">
+              <button style="background-color:tomato; color: white;">contact</button>
+            </li>
+
+
+          </ul>
         </div>
-        <ul>
-          <li>About us</li>
-          <li>Our work</li>
-          <li>Blog</li>
-          <li>Ebook</li>
-          <li>Technology Comparisons</li>
-          <li>How it works</li>
-        </ul>
-        <button class="nu">Contact us</button>
       </div>
-    </div>
-    <div class="drop">
-      <div class="drp1">
-        <uli class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="se.html" role=" button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+    </nav>
+
+    <div class="container-fluid">
+      <div style="display: flex; flex-direction: row; margin: 20px;">
+        <div class="dropdown">
+          <p class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Product Engineering
-          </a>
+          </p>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </uli>
-      </div>
-      <div class="drp2">
-        <uli class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        </div>
+        <div class="dropdown" style="margin-left: 50px;">
+          <p class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Cloud and DevOps Engineering
-          </a>
+          </p>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </uli>
-      </div>
-      <div class="drp3">
-        <uli class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        </div>
+        <div class="dropdown" style="margin-left: 50px;">
+          <p class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Data Engineering
-          </a>
+          </p>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </uli>
-      </div>
-      <div class="drp4">
-        <uli class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        </div>
+        <div class="dropdown" style="margin-left: 50px;">
+          <p class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Quality Engineering
-          </a>
+          </p>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </uli>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="ct">
     <div class="container">
       <div class="row">
@@ -451,6 +468,7 @@
 
       </div>
 
+
       <div class="col-md-4" id="po">
         <div class="row">
           <div class="col-md-1">
@@ -465,210 +483,614 @@
         </div>
 
       </div>
+    </div>
+  </div><br></br>
 
 
-    </div><br></br>
 
-    <div id="tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 container" id="zx">
-            <h1>Trusted by the <br>world’s leading <br>brands</h1>
-          </div>
-          <div class="col-md-8 container">
-            <div class="row">
-              <div class="col-md-12">
-                <table>
-                  <tr>
-                    <th><img src="img/rebbullg-5081cbdda382d840d9eecc872ce5c9b8.svg" alt="" id="immg"></th>
-                    <th><img src="img/pespsico.svg" alt="" id="immg"></t>
-                    <th> <img src="img/hm-sonyg-logo-1eb5cd62ee302f4c4f564eb3123c3c90.svg" alt="" id="immg"></th>
-                    <th> <img src="img/hilton.svg" alt="" id="immg"></th>
-                  </tr>
-                  <tr>
-                    <th><img src="img/boyscoutg-6d6684f00b0930da48a8610a4fef4bed.svg" alt="" id="immg"></th>
-                    <th> <img src="img/georgia-pacific.svg" alt="" id="immg"></th>
-                    <th><img src="img/bitmapg-7b4446d4c6a027ec21b922e79e444e95.svg" alt="" id="immg"></t>
-                    <th> <img src="img/zepinc.svg" alt="" id="immg"></th>
-                  </tr>
-                  <tr>
-                    <th><img src="img/try.svg" alt="" id="immg"></th>
-                    <th><img src="img/fih.svg" alt="" id="immg"></th>
-                    <th><img src="img/cameo.svg" alt="" id="immg"></th>
-                    <th><img src="img/renesas-logo-1d290e00ae3d5ca1ac5c40ae799d9dcb.svg" alt="" id="immg"></th>
-                  </tr>
-                  <tr>
-                    <th><img src="img/margaritaville-logo-b1552c2b32b377f7029f10a800ed6bee.svg" alt="" id="immg"></th>
-                    <th><img src="img/bank of america.svg" alt="" id="immg"></th>
-                    <th><img src="img/mistubishi electric.svg" alt="" id="immg"></th>
-                    <th><img src="img/fujifilm.svg" alt="" id="immg"></th>
-                  </tr>
-                </table>
-              </div>
+  <div id="tab">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 container" id="zx">
+          <h1>Trusted by the <br>world’s leading <br>brands</h1>
+        </div>
+        <div class="col-md-8 container">
+          <div class="row">
+            <div class="col-md-12">
+              <table>
+                <tr>
+                  <th><img src="img/rebbullg-5081cbdda382d840d9eecc872ce5c9b8.svg" alt="" id="immg"></th>
+                  <th><img src="img/pespsico.svg" alt="" id="immg"></t>
+                  <th> <img src="img/hm-sonyg-logo-1eb5cd62ee302f4c4f564eb3123c3c90.svg" alt="" id="immg"></th>
+                  <th> <img src="img/hilton.svg" alt="" id="immg"></th>
+                </tr>
+                <tr>
+                  <th><img src="img/boyscoutg-6d6684f00b0930da48a8610a4fef4bed.svg" alt="" id="immg"></th>
+                  <th> <img src="img/georgia-pacific.svg" alt="" id="immg"></th>
+                  <th><img src="img/bitmapg-7b4446d4c6a027ec21b922e79e444e95.svg" alt="" id="immg"></t>
+                  <th> <img src="img/zepinc.svg" alt="" id="immg"></th>
+                </tr>
+                <tr>
+                  <th><img src="img/try.svg" alt="" id="immg"></th>
+                  <th><img src="img/fih.svg" alt="" id="immg"></th>
+                  <th><img src="img/cameo.svg" alt="" id="immg"></th>
+                  <th><img src="img/renesas-logo-1d290e00ae3d5ca1ac5c40ae799d9dcb.svg" alt="" id="immg"></th>
+                </tr>
+                <tr>
+                  <th><img src="img/margaritaville-logo-b1552c2b32b377f7029f10a800ed6bee.svg" alt="" id="immg"></th>
+                  <th><img src="img/bank of america.svg" alt="" id="immg"></th>
+                  <th><img src="img/mistubishi electric.svg" alt="" id="immg"></th>
+                  <th><img src="img/fujifilm.svg" alt="" id="immg"></th>
+                </tr>
+              </table>
             </div>
           </div>
-        </div><br><br><br></br>
+        </div>
+      </div><br><br><br></br>
+    </div>
+  </div>
+
+
+  <div class="yt">
+    <h1>Your Full-Stack IT Outsourcing Partner</h1>
+    <h4 class="mnx">Our culture aligns well with yours – agile in mind, spirit, and speed.</h4>
+
+  </div><br><br>
+
+
+  <div class="iop">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" id="lk">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="img/hs-managed-agile-teams-icon.svg" width="40px" alt="" style="margin-top: 20px;">
+            </div>
+            <div class="col-md-10">
+              <h1>Manage Agile <br>Teams</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p>Our engagement model of remote agile teams has been built and refined over a long period of time. You
+            don’t just get vetted engineers but a proven and transparent process with a successful track record. They
+            immerse themselves in your project, maintaining your company culture and working in line with your
+            strategic goals.</p>
+        </div>
       </div>
     </div>
-    <div class="yt">
-      <h1>Your Full-Stack IT Outsourcing Partner</h1>
-      <h4 class="mnx">Our culture aligns well with yours – agile in mind, spirit, and speed.</h4>
+  </div><br> </br>
 
-    </div><br><br>
-    <div class="iop">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" id="lk">
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa-solid fa-cloud" id=""></i>
-              </div>
-              <div class="col-md-11">
-                <h1>Manage Agile <br>Teams</h1>
-              </div>
+
+  <div class="iop">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" id="lk">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="img/complex.svg" alt="" width="40px" style="margin-top: 20px;">
+            </div>
+            <div class="col-md-10">
+              <h1>Complex Core <br>Development</h1>
             </div>
           </div>
-          <div class="col-md-8">
-            <p>Our engagement model of remote agile teams has been built and refined over a long period of time. You
-              don’t just get vetted engineers but a proven and transparent process with a successful track record. They
-              immerse themselves in your project, maintaining your company culture and working in line with your
-              strategic goals.</p>
-          </div>
+        </div>
+        <div class="col-md-8">
+          <p>The traditional outsourcing model is broken and doesn’t support innovation and rapid change. The
+            established vendors are built only to work on large-scale peripheral engineering tasks. Simform was built
+            with the purpose of doing complex core engineering work in a high growth environment.</p>
         </div>
       </div>
-    </div><br> </br>
-    <div class="iop">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" id="lk">
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa-solid fa-cloud" id=""></i>
-              </div>
-              <div class="col-md-11">
-                <h1>Complex Core <br>Development</h1>
-              </div>
+    </div>
+  </div><br> </br>
+
+
+  <div class="iop">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" id="lk">
+          <div class="row">
+            <div class="col-2">
+              <img src="img/scale.svg" alt="" width="40px" style="margin-top: 20px;">
+            </div>
+            <div class="col-md-10">
+              <h1>Scale Without <br>Limits <h1>
             </div>
           </div>
-          <div class="col-md-8">
-            <p>The traditional outsourcing model is broken and doesn’t support innovation and rapid change. The
-              established vendors are built only to work on large-scale peripheral engineering tasks. Simform was built
-              with the purpose of doing complex core engineering work in a high growth environment.</p>
-          </div>
+        </div>
+        <div class="col-md-8">
+          <p>Our flexible global delivery center transforms your engineering from being bottlenecks to growth drivers.
+            We help you to identify and solve the critical business challenges with proven technology practices that
+            align with your customer needs and organizational challenges. Easily ramp up, scale and pivot quickly,
+            with minimal friction.</p>
         </div>
       </div>
-    </div><br> </br>
-    <div class="iop">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" id="lk">
-            <div class="row">
-              <div class="col-1">
-                <i class="fa-solid fa-cloud" id=""></i>
-              </div>
-              <div class="col-md-11">
-                <h1>Scale Without <br>Limits <h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <p>Our flexible global delivery center transforms your engineering from being bottlenecks to growth drivers.
-              We help you to identify and solve the critical business challenges with proven technology practices that
-              align with your customer needs and organizational challenges. Easily ramp up, scale and pivot quickly,
-              with minimal friction.</p>
-          </div>
-        </div>
-      </div>
-    </div><br> </br>
+    </div>
+  </div><br> </br>
+
+
+  <!-- video clip -->
+  <div class="toto" style=" background: #FAFBFF; padding: 70px;">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-
+          <h1>People ❤ us</h1>
         </div>
         <div class="col-md-4">
 
         </div>
         <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-5">
+              <h1>cLutch</h1>
+            </div>
+            <div class="col-md-7">
+              <p>5.0/5.0<i class="fa-solid fa-star" style="color: red;"></i><i class="fa-solid fa-star"
+                  style="color: red;"></i><i class="fa-solid fa-star" style="color: red;"></i><i
+                  class="fa-solid fa-star" style="color: red;"></i><br> Base on 26 client reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+    <div class="container" padding: ;>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem; z-index: -100%;">
+            <img src="img/jansen (1).webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/roundr-header-logo.png" width="60px" alt=""></h5>
+              <p class="card-text">Tech partner with product <br>engineering exprience an... <i
+                  class="fa-brands fa-youtube" style="color: red; font-size: 40px; margin-left: 30px;"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/jawann.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/freewire-logo.png" alt="" width="25px"></h5>
+              <p class="card-text">Proactive in updating the <br>product desing,... <i class="fa-brands fa-youtube"
+                  style="color: red; font-size: 40px; margin-left: 80px;"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/olivia (1).webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/madzi-alipo-logo.png" alt="" width="30px"></h5>
+              <p class="card-text">Simform has a reliable <br>development team who... <i class="fa-brands fa-youtube"
+                  style="color: red; font-size: 40px; margin-left: 50px;"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top: 35px;">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/danielle (1).webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/emrana-engineering-logo.png" width="60px" alt=""></h5>
+              <p class="card-text">Created a quality product <br>with well design UI,.. <i class="fa-brands fa-youtube"
+                  style="color: red; font-size: 40px; margin-left: 50px;"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/justin.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/swift-shopper-logo.png" alt="" width="25px"></h5>
+              <p class="card-text">Simform has an excellent <br>project management and... <i
+                  class="fa-brands fa-youtube" style="color: red; font-size: 40px; margin-left: 40px;"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/ritwik.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><img src="img/linker-logic-logo.png" alt="" width="30px"></h5>
+              <p class="card-text">Great experience with a <br> team that successfully... <i
+                  class="fa-brands fa-youtube" style="color: red; font-size: 40px; margin-left: 40px;"></i></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+
+  <div class="lp" style="padding: 80px;">
+
+    <div class="container">
+      <div style="padding: 30px 30px 30px 0px;">
+        <h1>Why Organizations Choose Simform</h1>
+        <p>Discover the many ways in which our clients have embraced the benefits of Simform way of engineering.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="e" style="padding: 20px; border-radius: 10px;">
+          <img src="img/visibly-case-logo@2x.png" alt="" width="80px">
+          <h5>Software that digitize the eye test <br>within five minutes</h5>
+          <p>.....a digital platform which could be an alternate to <br>the traditional lab coat and lens approach for
+            .... </p>
+          <h5>Read More</h5><br><br><br>
+          <h6>Results</h6><br>
+          _____________________________________________________________
+          <div class="aq">
+            <div class="qw">
+              <h5>Reduced eye test</h5>
+              <p>cost by75%</p>
+            </div>
+            <div class="bg">
+              <h5>Compelte eye test </h5>
+              <p>using smartphone within <br>10-15 minutes</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6" id="tr" style="padding: 20px; border-radius: 10px;">
+          <img src="img/freewire-case-logo@2x.png" alt="" width="90px">
+          <h5>EV charging platform to revolutionize <br>the we power everything</h5>
+          <p>FreeWire's Mobi Gen product line offer clean and <br>quiet on-site power to substitue... </p>
+          <h5>Read More</h5><br><br><br>
+          <h6>Results</h6><br>
+          _____________________________________________________________
+          <div class="aq">
+            <div class="qw">
+              <h5>$125 Million</h5>
+              <p>Funding for Next Gen <br>development</p>
+            </div>
+            <div class="bg">
+              <h5>Used by big companies</h5>
+              <P>Walmart, Uber, Volvo, <br>Linkedin, BellEnergy</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px;">
+      <div class="row">
+        <div class="c0l-md-6" style="background: #ECCCB7; width: fit-content; padding: 20px; border-radius: 10px;">
+          <img src="img/flh-case-logo@2x.png" width="50px" alt="">
+          <h5>Improving the online web experience <br>for international Hockey Federation <br>(FIH) </h5>
+          <P>...they wanted increased user engagement, usability, <br>discoverability,while providing...</P>
+          <h5>Read More</h5><br><br><br>
+          <h6>Results</h6><br>
+          _____________________________________________________________
+          <div class="aq">
+            <div class="qw">
+              <h5>Complete website</h5>
+              <p>within 3 month before <br> World Cup</p>
+            </div>
+
+
+            <div class="bg">
+              <h5>Scalable website</h5>
+              <p>to handle millions of <br>visitors</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="c0l-md-6"
+          style="background: #EADAB8; width: fit-content; margin-left: 39px; padding:35px; border-radius: 10px;">
+          <img src="img/craypay-case-logo@2x.png" width="90px" alt="">
+          <h5>M-Payment Solution to modernise retail <br>buying experience</h5>
+          <p>...over 70% of consumers say that if they get benefits <br> of loyalty points or perks in retail stores,
+            they
+            are...</p>
+          <h5>Read More</h5><br><br><br>
+          <h6>Results</h6><br>
+          _____________________________________________________________
+          <div class="aq">
+            <div class="qw">
+              <h5>10,000+ users</h5>
+              <p>60,000+ retail locations <br>in USA</p>
+            </div>
+
+            <div class="bg">
+              <h5>Cryptocurrency</h5>
+              <p>was made spendable in <br>retail store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="looo" style="background: #FAFBFF; padding: 90px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="pop bg-dark">
+            <div class="">
+              <h3>GREAT PLACE TO WORK REVIEW</h3>
+              <p>I feel a sense of pride working at simform.</p><br>
+              <h6>DevOps Engineer<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+              <p>Simform has accelerated by career graph.</p><br>
+              <h6>Tech lead</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-6">
+          <h1>Culture crafted and loved <br>by engineers</h1>
+          <p>The Simform culture is crafted to create a truly <br>rewarding experience for engineers, meaning <br>your
+            team will
+            be made up of highly motivated <br>people. As a result our teams are tightly <br>integrated with yours. And
+            that is
+            shown by the <br>love they shower back on us.</p>
+          <p style="padding: 2px; width: 50px; background-color: red;"></p>
+          <p style="color: red; font-weight: bold;">Learn More</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <h3>Recent Awards and Certifications</h3>
+        <div>
+          <img src="img/iaop-logo@2x.webp" alt="">
+          <img src="img/new-aws-partner-logo@2x.webp" alt="" style="margin-left: 30px;">
+          <img src="img/certinspect-r-logo@2x.webp" alt="" style="margin-left: 30px;">
+          <img src="img/glassdoor-logo@2x.webp" alt="" style="margin-left: 30px;">
+          <img src="img/cmmi-level3@2x.webp" alt="" style="margin-left: 30px;">
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6" id="e">
-        <img src="img/visibly-case-logo@2x.png" alt="" width="80px">
-        <h5>Software that digitize the eye test <br>within five minutes</h5>
-        <p>.....a digital platform which could be an alternate to <br>the traditional lab coat and lens approach for
-          .... </p>
-        <h5>Read More</h5><br><br><br>
-        <h6>Results</h6><br>
-        _____________________________________________________________
-        <div class="aq">
-          <div class="qw">
-            <h5>Reduced eye test</h5>
-            <p>cost by75%</p>
-          </div>
-          <div class="bg">
-            <h5>Compelte eye test </h5>
-            <p>using smartphone within <br>10-15 minutes</p>
+      <div class="col-md-3">
+        <img src="img/aws-solution-architect@2x.webp" alt=""
+          style="border: 1px groove aqua; border-radius: 5px; padding: 30px;">
+      </div>
+      <div class="col-md-3">
+        <img src="img/aws-hm-cloud-practitioner@2x.webp" alt=""
+          style="border: 1px groove hotpink; border-radius: 6px; padding: 30px;">
+      </div>
+      <div class="col-md-3">
+        <img src="img/aws-hm-devops-engineer@2x.webp" alt=""
+          style="border: 1px groove yellow ; padding: 30px; border-radius: 7px;">
+      </div>
+      <div class="col-md-3">
+        <img src="img/aws-consulting-partner@2x.webp" alt=""
+          style="border: 1px groove aquamarine ; padding: 30px; border-radius: 5px;">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <h1>Our Perspective on Digital Engineering</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="img/blog-devops@2x.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">How to Implement DevOps for <br>Enterprises?</h5>
+            <p class="card-text">Implementing enterprise DevOps for a <br>large-scale organization is a
+              challenge...
+            </p>
+            <div style="display: flex; justify-content: space-between;">
+              <p style="color: red;"> <small>By Hiren Dhaduk</small></p>
+              <p><small>February 15, 2022</small></p>
+            </div>
           </div>
         </div>
       </div>
 
 
-      <div class="col-md-6" id="tr">
-        <img src="img/freewire-case-logo@2x.png" alt="" width="90px">
-        <h5>EV charging platform to revolutionize <br>the we power everything</h5>
-        <p>FreeWire's Mobi Gen product line offer clean and <br>quiet on-site power to substitue... </p>
-        <h5>Read More</h5><br><br><br>
-        <h6>Results</h6><br>
-        _____________________________________________________________
-        <div class="aq">
-          <div class="qw">
-            <h5>$125 Million</h5>
-            <p>Funding for Next Gen <br>development</p>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="img/blog-technical-debt-new@2x.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tech debt: How to Manage Debts for your Software Development?</h5>
+            <p class="card-text">Going fast does not always mean you win the race! When you rush your software
+              development, it can lead to technical deb...</p>
+            <div style="display: flex; justify-content: space-between;">
+              <p style="color: red;"> <small>By Hiren Dhaduk</small></p>
+              <p><small>March 18, 2021</small></p>
+            </div>
           </div>
-          <div class="bg">
-            <h5>Used by big companies</h5>
-            <P>Walmart, Uber, Volvo, <br>Linkedin, BellEnergy</P>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="img/blog-technology-stack@2x.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tech Stack 2022: A Guide to Choosing <br>the right software stack</h5>
+            <p class="card-text">A technology stack will allow you to build,<br> test, deploy and maintain consistency
+              of</p>
+            <div style="display: flex; justify-content: space-between;">
+              <p style="color: red;"> <small>By Hiren Dhaduk</small></p>
+              <p><small>August 16, 2022</small></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
 
 
   <div class="container" style="margin-top: 20px;">
     <div class="row">
-      <div class="c0l-md-6" style="background: #ECCCB7; width: fit-content;">
-        <img src="img/flh-case-logo@2x.png" width="50px" alt="">
-        <h5>Improving the online web experience <br>for international Hockey Federation <br>(FIH) </h5>
-        <P>...they wanted increased user engagement, usability, <br>discoverability,while providing...</P>
-        <h5>Read More</h5><br><br><br>
-        <h6>Results</h6><br>
-        _____________________________________________________________
-        <div class="aq">
-          <div class="qw">
-            <h5>Complete website</h5>
-            <p>within 3 month before <br> World Cup</p>
+      <div class="card mb-3" style="max-width: 540px; margin-right: 10px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ebook-building-battle-tested-software-architecture@2x.webp" class="img-fluid rounded-start"
+              alt="...">
           </div>
-
-          
-          <div class="bg">
-            <h5>Scalable website</h5>
-            <p>to handle millions of <br>visitors</p>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Building Battle-tested Software <br>Architecture: Lessons from Top <br>Tech
+                Companies
+              </h5>
+              <p class="card-text">A one-stop guide that provides <br>comprehensive and expert advice to <br>CTOs & tech
+                decision-makers for
+                <br>evolving software architecture at scale.
+              </p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="c0l-md-6">
-         <img src="img/craypay-case-logo@2x.png" width="90px" alt="">
-         <h5>M-Payment </h5>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ebook-enterprise_kubernative_strategy@2x.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">CTOs Handbook to Build an <br>Enterprise Kubernetes Strategy</h5>
+              <p class="card-text">Adoption of new technologies is <br>advantageous yet challenging. This <br>eBook is
+                for
+                each & tech-savvy <br>enterprise that wants to embrace ....</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="card mb-3" style="max-width: 540px; margin-right: 15px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ebook-building-scalable-frontend@2x.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">CTO’s Handbook for Building <br>Scalable Frontend</h5>
+              <p class="card-text">In a typical startup scenario, you have a <br>great business idea that gets validated
+                <br>in the market through MVP. After that, <br>the number of users starts to grow...
+              </p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ebook-microservices-are-transforming@2x.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">20+ Ways Microservices are <br>Transforming Industries: Use Cases <br>from Capital
+                One, Facebook, Uber, <br>and more</h5>
+              <p class="card-text">The business world has realized the <br> significance of adopting a<br> microservices
+                architecture and how<br> it<br> can transform the development.<br>.
+              <p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style=" background: #FBFCFD; padding-top: 90px; margin-bottom: 20px;">
+    <div class="container " style="padding: 50px; background: #FBFCFD;">
+      <h5>Areas We Serve</h5><br>
+      <div class="row">
+        <div class="col">
+          <p style="font-weight: bold;">San Franciso</p>
+          388 Market Street, Suite 1300 San <br>Francisco, CA 94111 USA
+          <p style="font-weight: bold; font-style: italic;">call us now</p>
+        </div>
+        <div class="col">
+          <p style="font-weight: bold;">Canada</p>
+          15-115 - Bentall II Vancouver BC,<br> V7X 1M8
+          <p style="font-weight: bold; font-style: italic;">call us now</p>
+        </div>
+        <div class="col">
+          <p style="font-weight: bold;">India</p>
+          501 Binori B Sq-2, Nr DoubleTree <br>By Hilton, Bopal Rd, Ahmedabad- <br>380054, India
+          <p style="font-weight: bold; font-style: italic;">call us now</p>
+        </div>
+        <div class="col">
+          <p style="font-weight: bold;">Los Angeles</p>
+          700 S Flower Street, Suite 1000,<br> Los Angeles, CA 90017 USA
+          <p style="font-weight: bold; font-style: italic;">call us now</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h4><img src="img/simform logo.webp" width="30px" alt=""> SIMFORM</h4>
+        <i class="fa-brands fa-facebook" id="kimi" style="margin-right: 10px;"></i><i class="fa-brands fa-twitter"
+          style="margin-right: 8px;" id="kimi"></i><i class="fa-brands fa-instagram" id="kimi"></i><i
+          class="fa-brands fa-youtube" style="margin-left:8px;" id="kimi"></i>
+      </div>
+      <div class="col">
+        <p style="font-weight: bold;">About Simform</p>
+        <p style="color:aliceblue ;">__________________________________</p><br>
+        About Us <br>
+        Our Partners <br>
+        How Simform works <br>
+        Areas We Serve <br>
+        Careers <br>
+        Contact us
+      </div>
+      <div class="col">
+        <p style="font-weight: bold;">Services</p>
+        <p style="color:aliceblue ;">______________________________________</p> <br>
+        Product Engineering <br>
+        Cloud and DevOps Engineering <br>
+        Data Engineering <br>
+        Quality Engineering <br>
+        Talent Solutions
+      </div>
+      <div class="col">
+        <p style="font-weight: bold;">Resources</p>
+        <p style="color:aliceblue ;">_______________________________</p><br>
+        Blog <br>
+        Ebooks <br>
+        Case Studies
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
