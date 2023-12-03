@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
   <style>
     body {
       /* background-color: lightsteelblue; */
@@ -243,12 +240,14 @@
     }
 
     .bg {
-      margin-left: 70px;
+      margin-left: 10px;
     }
 
     #e {
       background-color: rgb(177, 226, 191);
       width: fit-content;
+      padding: 20px;
+      border-radius: 10px;
     }
 
     #tr {
@@ -261,11 +260,46 @@
       background: #FAFBFF;
     }
 
+    .ut {
+      background-color: white;
+    }
+
+    .ut:hover {
+      background-color: rgb(241, 93, 93);
+    }
+
+    .opp {
+      padding: 60px 10px 10px 10px;
+    }
+
+    #cos {
+      visibility: hidden;
+      position: absolute;
+    }
+
 
     @media screen and (max-width:768px) {
 
       body {
         overflow-x: hidden;
+      }
+
+      #e {
+        margin: auto;
+        /* padding: 10px 45px; */
+        margin-bottom: 10px;
+      }
+      #koko{
+        width: 100%;
+      }
+
+      #co {
+        display: none;
+      }
+
+      #cos {
+        visibility: visible;
+        position: relative;
       }
 
       .ct {
@@ -312,16 +346,28 @@
 
       table {
         width: 90%;
-        margin-left: -12%;
+        margin: auto;
       }
 
       #zx {
         text-align: start;
-        margin-left: -10%;
+        margin: auto;
       }
 
       #tab {
         margin-top: -35%;
+      }
+
+      #mv {
+        display: none;
+      }
+
+      #kq {
+        display: none;
+      }
+
+      #nt {
+        width: 100%;
       }
 
     }
@@ -329,10 +375,10 @@
 </head>
 
 <body>
-  <div style="background-color: white; border: 1px solid whitesmoke; position: fixed; z-index: 100%;">
+  <div style="background-color: white; border: 1px solid whitesmoke; position: fixed; z-index: 1; width: 100%;">
     <nav class="navbar navbar-expand-lg ">
 
-      <div class="container-fluid">
+      <div class="container-fluid" style="display: flex;">
         <a class="navbar-brand" href="#"><img src="img/simform logo.webp" width="30px" alt="">SIMFORM</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -361,8 +407,8 @@
             <li class="nav-item" style="margin-left: 40px;">
               <a class="nav-link" href="#" style="font-weight: bold;">How it work</a>
             </li>
-            <li class="nav-item" style="margin-left: 90px;">
-              <button style="background-color:tomato; color: white;">contact</button>
+            <li class="nav-item" style="margin-left: 150px;">
+              <button style="background-color:tomato; color: white; padding: 10px 30px; border: none;">Contact Us</button>
             </li>
 
 
@@ -371,8 +417,8 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div style="display: flex; flex-direction: row; margin: 20px;">
+    <div class="container-fluid" id="mv">
+      <div style="display: flex; flex-direction: row; margin: 0px;">
         <div class="dropdown">
           <p class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Product Engineering
@@ -635,9 +681,9 @@
     </div>
 
 
-    <div class="container" padding: ;>
+    <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin: auto;">
           <div class="card" style="width: 20rem; z-index: -100%;">
             <img src="img/jansen (1).webp" class="card-img-top" alt="...">
             <div class="card-body">
@@ -720,34 +766,38 @@
         <p>Discover the many ways in which our clients have embraced the benefits of Simform way of engineering.</p>
       </div>
       <div class="row">
-        <div class="col-md-6" id="e" style="padding: 20px; border-radius: 10px;">
-          <img src="img/visibly-case-logo@2x.png" alt="" width="80px">
-          <h5>Software that digitize the eye test <br>within five minutes</h5>
-          <p>.....a digital platform which could be an alternate to <br>the traditional lab coat and lens approach for
-            .... </p>
-          <h5>Read More</h5><br><br><br>
-          <h6>Results</h6><br>
-          _____________________________________________________________
-          <div class="aq">
-            <div class="qw">
-              <h5>Reduced eye test</h5>
-              <p>cost by75%</p>
-            </div>
-            <div class="bg">
-              <h5>Compelte eye test </h5>
-              <p>using smartphone within <br>10-15 minutes</p>
+        <div class="col-md-6" id="e">
+          <div style="margin: auto;">
+            <img src="img/visibly-case-logo@2x.png" alt="" width="80px">
+            <h5>Software that digitize the eye test <br>within five minutes</h5>
+            <p>.....a digital platform which could be an alternate to <br>the traditional lab coat and lens approach for
+              .... </p>
+            <h5>Read More</h5><br><br><br>
+            <h6>Results</h6>
+            <p id="co">______________________________________________________</p>
+            <p id="cos">_____________________________</p>
+            <div class="aq">
+              <div class="qw">
+                <h5>Reduced eye test</h5>
+                <p>cost by75%</p>
+              </div>
+              <div class="bg">
+                <h5>Compelte eye test </h5>
+                <p>using smartphone within <br>10-15 minutes</p>
+              </div>
             </div>
           </div>
         </div>
 
 
-        <div class="col-md-6" id="tr" style="padding: 20px; border-radius: 10px;">
+        <div class="col-md-6" id="tr" style="padding: 20px; border-radius: 10px; margin: auto;">
           <img src="img/freewire-case-logo@2x.png" alt="" width="90px">
           <h5>EV charging platform to revolutionize <br>the we power everything</h5>
           <p>FreeWire's Mobi Gen product line offer clean and <br>quiet on-site power to substitue... </p>
           <h5>Read More</h5><br><br><br>
           <h6>Results</h6><br>
-          _____________________________________________________________
+          <p id="co">_____________________________________________________________</p>
+          <p id="cos">_____________________________</p>
           <div class="aq">
             <div class="qw">
               <h5>$125 Million</h5>
@@ -763,7 +813,7 @@
     </div>
 
 
-    <div class="container" style="margin-top: 20px;">
+    <div class="container" style="margin-top: 20px;" id="kq">
       <div class="row">
         <div class="c0l-md-6" style="background: #ECCCB7; width: fit-content; padding: 20px; border-radius: 10px;">
           <img src="img/flh-case-logo@2x.png" width="50px" alt="">
@@ -788,10 +838,12 @@
 
 
         <div class="c0l-md-6"
-          style="background: #EADAB8; width: fit-content; margin-left: 39px; padding:35px; border-radius: 10px;">
+          style="background: #EADAB8; width: fit-content; margin-left: 39px; padding:35px; border-radius: 10px;"
+          id="kq">
           <img src="img/craypay-case-logo@2x.png" width="90px" alt="">
           <h5>M-Payment Solution to modernise retail <br>buying experience</h5>
-          <p>...over 70% of consumers say that if they get benefits <br> of loyalty points or perks in retail stores,
+          <p>...over 70% of consumers say that if they get benefits <br> of loyalty points or perks in retail
+            stores,
             they
             are...</p>
           <h5>Read More</h5><br><br><br>
@@ -817,30 +869,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <div class="pop bg-dark">
-            <div class="">
-              <h3>GREAT PLACE TO WORK REVIEW</h3>
-              <p>I feel a sense of pride working at simform.</p><br>
-              <h6>DevOps Engineer<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
-              <p>Simform has accelerated by career graph.</p><br>
-              <h6>Tech lead</h6>
-            </div>
-          </div>
+          <img src="img/problemm 001.jpg" alt="" id="koko">
         </div>
+
 
         <div class="col-md-1">
 
         </div>
         <div class="col-md-6">
-          <h1>Culture crafted and loved <br>by engineers</h1>
-          <p>The Simform culture is crafted to create a truly <br>rewarding experience for engineers, meaning <br>your
-            team will
-            be made up of highly motivated <br>people. As a result our teams are tightly <br>integrated with yours. And
-            that is
-            shown by the <br>love they shower back on us.</p>
-          <p style="padding: 2px; width: 50px; background-color: red;"></p>
-          <p style="color: red; font-weight: bold;">Learn More</p>
+          <div class="opp">
+            <h1>Culture crafted and loved <br>by engineers</h1>
+            <p>The Simform culture is crafted to create a truly <br>rewarding experience for engineers, meaning
+              <br>your
+              team will
+              be made up of highly motivated <br>people. As a result our teams are tightly <br>integrated with
+              yours.
+              And
+              that is
+              shown by the <br>love they shower back on us.
+            </p>
+            <p style="padding: 2px; width: 50px; background-color: red;"></p>
+            <p style="color: red; font-weight: bold;">Learn More</p>
+          </div>
         </div>
       </div>
     </div>
@@ -905,7 +955,7 @@
       </div>
 
 
-      <div class="col-md-4">
+      <div class="col-md-4" id="kq">
         <div class="card" style="width: 18rem;">
           <img src="img/blog-technical-debt-new@2x.webp" class="card-img-top" alt="...">
           <div class="card-body">
@@ -921,12 +971,13 @@
       </div>
 
 
-      <div class="col-md-4">
+      <div class="col-md-4" id="kq">
         <div class="card" style="width: 18rem;">
           <img src="img/blog-technology-stack@2x.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Tech Stack 2022: A Guide to Choosing <br>the right software stack</h5>
-            <p class="card-text">A technology stack will allow you to build,<br> test, deploy and maintain consistency
+            <p class="card-text">A technology stack will allow you to build,<br> test, deploy and maintain
+              consistency
               of</p>
             <div style="display: flex; justify-content: space-between;">
               <p style="color: red;"> <small>By Hiren Dhaduk</small></p>
@@ -941,7 +992,7 @@
 
 
 
-  <div class="container" style="margin-top: 20px;">
+  <div class="container" style="margin-top: 20px;" id="kq">
     <div class="row">
       <div class="card mb-3" style="max-width: 540px; margin-right: 10px;">
         <div class="row g-0">
@@ -954,7 +1005,8 @@
               <h5 class="card-title">Building Battle-tested Software <br>Architecture: Lessons from Top <br>Tech
                 Companies
               </h5>
-              <p class="card-text">A one-stop guide that provides <br>comprehensive and expert advice to <br>CTOs & tech
+              <p class="card-text">A one-stop guide that provides <br>comprehensive and expert advice to <br>CTOs &
+                tech
                 decision-makers for
                 <br>evolving software architecture at scale.
               </p>
@@ -963,7 +1015,7 @@
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3" style="max-width: 540px;" id="kq">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="img/ebook-enterprise_kubernative_strategy@2x.webp" class="img-fluid rounded-start" alt="...">
@@ -982,7 +1034,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="kq">
     <div class="row">
       <div class="card mb-3" style="max-width: 540px; margin-right: 15px;">
         <div class="row g-0">
@@ -992,7 +1044,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">CTO’s Handbook for Building <br>Scalable Frontend</h5>
-              <p class="card-text">In a typical startup scenario, you have a <br>great business idea that gets validated
+              <p class="card-text">In a typical startup scenario, you have a <br>great business idea that gets
+                validated
                 <br>in the market through MVP. After that, <br>the number of users starts to grow...
               </p>
               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
@@ -1000,21 +1053,61 @@
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3" style="max-width: 540px;" id="kq">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="img/ebook-microservices-are-transforming@2x.webp" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">20+ Ways Microservices are <br>Transforming Industries: Use Cases <br>from Capital
+              <h5 class="card-title">20+ Ways Microservices are <br>Transforming Industries: Use Cases <br>from
+                Capital
                 One, Facebook, Uber, <br>and more</h5>
-              <p class="card-text">The business world has realized the <br> significance of adopting a<br> microservices
+              <p class="card-text">The business world has realized the <br> significance of adopting a<br>
+                microservices
                 architecture and how<br> it<br> can transform the development.<br>.
               <p>
               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container" style="padding: 80px 20px;">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="img/whALA WORK.jpg" alt="" id="nt">
+        </div>
+        <div class="col-md-5">
+          <h1>Simform Guarantee</h1>
+          <div style="display: flex;">
+            <div>
+              <img src="img/flexible 001.svg" alt="">
+            </div>
+            <div>
+              <h5>Flexible, efficient scaling</h5>
+              <p>Expand or reduce your remote team size on demand.</p>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div><img src="img/team 001.svg" alt=""></div>
+            <div>
+              <h5>Team of 1,000+ engineers</h5>
+              <p>Access vetted experts in the tech <br> stack of your choice.</p>
+            </div>
+          </div>
+          <div>
+            <div><img src="img/long 001.svg" alt=""></div>
+            <div>
+              <h5>Long-term predictability</h5>
+              <p>Simform’s average engagement <br> duration is 2 years.</p>
+            </div>
+          </div>
+          <button style="border: 1px solid rgb(241, 93, 93); padding: 10px 30px; border-radius: 5px; " class="ut">Work
+            with us</button>
         </div>
       </div>
     </div>
@@ -1056,7 +1149,8 @@
         <h4><img src="img/simform logo.webp" width="30px" alt=""> SIMFORM</h4>
         <i class="fa-brands fa-facebook" id="kimi" style="margin-right: 10px;"></i><i class="fa-brands fa-twitter"
           style="margin-right: 8px;" id="kimi"></i><i class="fa-brands fa-instagram" id="kimi"></i><i
-          class="fa-brands fa-youtube" style="margin-left:8px;" id="kimi"></i>
+          class="fa-brands fa-youtube" style="margin-left:8px;" id="kimi"></i><br><br>
+        <img src="img/clutch .jpg" alt="">
       </div>
       <div class="col">
         <p style="font-weight: bold;">About Simform</p>
@@ -1084,10 +1178,21 @@
         Ebooks <br>
         Case Studies
       </div>
-      
+
     </div>
   </div>
 
+  <div id="bg" style="display: flex; margin-top: 10px; cursor: pointer;">
+    <p>NEXT</p>
+    <button><a href="se.html">1</a></button>
+    <button><a href="Expo.html">2</a></button>
+    <button><a href="dash.html">3</a></button>
+    <button><a href="domain.html">4 </a></button>
+    <button><a href="pay pal.html">5</a></button>
+    <button><a href="message bird.html">6</a></button>
+    <button><a href="third.html">7</a></button>
+    <button><a href="index.html">8</a></button>
+</div>
 
 
 
