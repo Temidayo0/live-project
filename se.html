@@ -148,12 +148,40 @@
         <br><button class="hg"><img src="img/apple-logo_20.svg" alt="">Continue with Apple</button>
         <br>
         <p>______________or_______________</p>
-        <input type="text" placeholder="Email address or username">
+        <input oninput="userval()" id="userr" type="text" placeholder="Email address or username"> <br>
+        <span id="erroruser"></span><br>
         <br><button class="cx">Contine</button><br><br>
         <p><input type="checkbox">Remember me for 30 days</p><br>
         <p>Don't have an account?</p>
         <a href="#">Create account</a>
     </form>
+
+    <script>
+        let erroruser = document.querySelector('#erroruser');
+        let userr = document.querySelector('#userr');
+        const nameval = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+
+
+        let gogo;
+        function userval() {
+            if (!userr.value) {
+                erroruser.innerHTML = 'Input your username'
+                erroruser.style.color = 'red'
+                gogo = false;
+            }
+            else if (!userr.value.match(nameval)) {
+                erroruser.innerHTML = 'Enter a correct email address'
+                erroruser.style.color = 'red'
+                gogo = false;
+            }
+            else {
+                erroruser.innerHTML = 'Done'
+                erroruser.style.color = 'green'
+            }
+        }
+    </script>
 
 
     <div id="bg" style="display: flex; margin-top: 10px; cursor: pointer;">
