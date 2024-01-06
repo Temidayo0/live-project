@@ -53,7 +53,7 @@
             margin: 10px;
             border: 1px groove;
             border-radius: 5px;
-            color:white;
+            color: white;
         }
 
         .bt2 {
@@ -108,7 +108,7 @@
 
         .fd {
             text-align: center;
-                }
+        }
 
         a {
             text-decoration: none;
@@ -180,7 +180,8 @@
 
                 font-size: 20px;
             }
-            #oyp{
+
+            #oyp {
                 overflow-x: hidden;
             }
 
@@ -201,7 +202,7 @@
                 margin-left: 80px;
             }
 
-            #tyty{
+            #tyty {
                 flex-direction: column;
             }
         }
@@ -278,8 +279,9 @@
             <div class="col-md-8 d-flex justify-content-center" id="oyp">
                 <div class="lkb">
                     <h1>
-                        <a href="Expo.html"><img src="img/algolia-logo-light-2fc6ad36a48bf09ddd3136a97e71b523494ce964c348c150a628d29e94f15400 (1).svg"
-                            alt="" width="170px" class="zz"></a>
+                        <a href="Expo.html"><img
+                                src="img/algolia-logo-light-2fc6ad36a48bf09ddd3136a97e71b523494ce964c348c150a628d29e94f15400 (1).svg"
+                                alt="" width="170px" class="zz"></a>
                     </h1>
                     <div id="vc">
                         <table>
@@ -295,10 +297,12 @@
                             </div>
                             <p class="pop my-3">Or enter your details manually</p>
                             <div>
-                                <input type="text" class="nb" placeholder="Enter your email">
-                                <input type="password" class="nb" placeholder="Enter your password">
+                                <input type="text" class="nb" placeholder="Enter your email" id="userr" oninput="userval()"><br>
+                                <span id="erroruser"></span><br>
+                                <input type="password" class="nb" placeholder="Enter your password" id="passs" oninput="passval()"><br>
+                                <span id="errorpass"></span>
                                 <div class="ju my-3">
-                                    <input type="checkbox" class="fq">
+                                    <input type="checkbox" class="fq" id="checkk">
                                     <label style="line-height: 23px; " class="juy">
                                         I accept Algolia's Terms of Service, Build Plan Terms and Service Limits,
                                         and have read
@@ -315,10 +319,10 @@
                                 </p>
                             </div>
                             <div class="my-3 text-center">
-                                <p><button class="bt3 shadow">Sing in up with your email</button></p>
+                                <p><button class="bt3 shadow" type="submit">Sing in up with your email</button></p>
                             </div>
                             <div class="my-5 text-center">
-                                <p ><label for="" class="fd">Already have an account? <a href="#">log in</a></label>
+                                <p><label for="" class="fd">Already have an account? <a href="#">log in</a></label>
                                 </p>
                             </div>
                         </table>
@@ -342,6 +346,53 @@
             </div>
         </div>
 
+        <script>
+            let userr = document.querySelector('#userr');
+            let passs = document.querySelector('#passs');
+            let erroruser=document.querySelector('#erroruser');
+            let errorpass=document.querySelector('#errorpass')
+            let checkk = document.querySelector('#checkk');
+            const nameval=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const passsval=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{5,15}$/;
+
+            let gogo;
+            function userval(){
+                if(!userr.value){
+                    erroruser.innerHTML='Input your username'
+                    erroruser.style.color='red'
+                    gogo=false;
+                }
+                else if(!userr.value.match(nameval)){
+                    erroruser.innerHTML='wrong input'
+                    erroruser.style.color='red'
+                    gogo=false;
+                }
+                else{
+                    erroruser.innerHTML='Done'
+                    erroruser.style.color='green'
+                }
+            }
+
+            function passval(){
+                if(!passs.value){
+                    errorpass.innerHTML='Input your password'
+                    errorpass.style.color='red'
+                    gogo=false;
+                }
+                else if(!passs.value.match(passsval)|| passs.value.length<8 || passs.value.length >12 ){
+                    errorpass.innerHTML='wrong input'
+                    errorpass.style.color='red'
+                    gogo=false;
+                }
+                else{
+                    errorpass.innerHTML='Done'
+                    errorpass.style.color='green'
+                }
+            }
+
+
+        </script>
+
         <div id="bg" style="display: flex; margin-top: 10px; cursor: pointer;">
             <p>NEXT</p>
             <button><a href="se.html">1</a></button>
@@ -353,7 +404,7 @@
             <button><a href="third.html">7</a></button>
             <button><a href="index.html">8</a></button>
         </div>
-        
+
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
